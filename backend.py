@@ -1,10 +1,5 @@
-import pandas as pd
-import numpy as np
-from sklearn.linear_model import LogisticRegression
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
 from flask import Flask, request, render_template, jsonify
-import random
+
 
 def process(x):
     if x[0]<28 and x[2]>40:
